@@ -24260,6 +24260,18 @@ var logos = [
 	{
 		src: "/assets/logo-fauna-aa403-2BIXt4B0.png",
 		alt: "Fauna Varejista"
+	},
+	{
+		src: "https://img.usecurling.com/i?q=market&color=multicolor",
+		alt: "Market Supermercados"
+	},
+	{
+		src: "https://img.usecurling.com/i?q=grocery&color=multicolor",
+		alt: "Grocery Store"
+	},
+	{
+		src: "https://img.usecurling.com/i?q=retail&color=multicolor",
+		alt: "Retail Express"
 	}
 ];
 function StatItem({ label, value, suffix = "", isInView, delay }) {
@@ -24322,13 +24334,13 @@ function Stats() {
 					className: "text-center text-white/50 text-sm font-semibold uppercase tracking-widest mb-8",
 					children: "Marcas que confiam na nossa estratégia"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "bg-white/95 py-10 md:py-14 px-6 rounded-2xl shadow-xl border border-white/20 w-full",
+					className: "bg-white/95 py-10 md:py-12 px-6 rounded-2xl shadow-xl border border-white/20 w-full",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "flex flex-wrap justify-center items-center gap-12 md:gap-20 lg:gap-24",
+						className: "flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16",
 						children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: logo.src,
 							alt: logo.alt,
-							className: "h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-w-[200px] sm:max-w-[250px] md:max-w-[300px] object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm"
+							className: "h-12 sm:h-16 md:h-20 w-auto max-w-[130px] sm:max-w-[160px] md:max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm"
 						}, i$2))
 					})
 				})]
@@ -30089,4 +30101,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 var App_default = App;
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App_default, {}));
 
-//# sourceMappingURL=index-B9CAn4zZ.js.map
+//# sourceMappingURL=index-CmUIKZ89.js.map

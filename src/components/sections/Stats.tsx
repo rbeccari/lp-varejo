@@ -10,6 +10,9 @@ const logos = [
   { src: logoExamine, alt: 'Examine Supermercados' },
   { src: logoBarbosao, alt: 'Barbosão Supermercados' },
   { src: logoFauna, alt: 'Fauna Varejista' },
+  { src: 'https://img.usecurling.com/i?q=market&color=multicolor', alt: 'Market Supermercados' },
+  { src: 'https://img.usecurling.com/i?q=grocery&color=multicolor', alt: 'Grocery Store' },
+  { src: 'https://img.usecurling.com/i?q=retail&color=multicolor', alt: 'Retail Express' },
 ]
 
 function StatItem({
@@ -84,14 +87,14 @@ export function Stats() {
             Marcas que confiam na nossa estratégia
           </p>
 
-          <div className="bg-white/95 py-10 md:py-14 px-6 rounded-2xl shadow-xl border border-white/20 w-full">
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 lg:gap-24">
+          <div className="bg-white/95 py-10 md:py-12 px-6 rounded-2xl shadow-xl border border-white/20 w-full">
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
               {logos.map((logo, i) => (
                 <img
                   key={i}
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-w-[200px] sm:max-w-[250px] md:max-w-[300px] object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm"
+                  className="h-12 sm:h-16 md:h-20 w-auto max-w-[130px] sm:max-w-[160px] md:max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm"
                 />
               ))}
             </div>

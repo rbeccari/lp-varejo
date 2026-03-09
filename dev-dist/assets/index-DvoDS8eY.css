@@ -983,10 +983,6 @@ section[aria-label='Notifications alt+T'] {
   height: 3.5rem;
 }
 
-.h-16{
-  height: 4rem;
-}
-
 .h-2{
   height: 0.5rem;
 }
@@ -1267,6 +1263,10 @@ section[aria-label='Notifications alt+T'] {
 
 .max-w-\[--skeleton-width\]{
   max-width: var(--skeleton-width);
+}
+
+.max-w-\[130px\]{
+  max-width: 130px;
 }
 
 .max-w-\[200px\]{
@@ -3635,12 +3635,12 @@ section[aria-label='Notifications alt+T'] {
     display: flex;
   }
 
-  .sm\:h-20{
-    height: 5rem;
+  .sm\:h-16{
+    height: 4rem;
   }
 
-  .sm\:max-w-\[250px\]{
-    max-width: 250px;
+  .sm\:max-w-\[160px\]{
+    max-width: 160px;
   }
 
   .sm\:max-w-sm{
@@ -3708,8 +3708,8 @@ section[aria-label='Notifications alt+T'] {
     height: 3rem;
   }
 
-  .md\:h-24{
-    height: 6rem;
+  .md\:h-20{
+    height: 5rem;
   }
 
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\]{
@@ -3720,8 +3720,8 @@ section[aria-label='Notifications alt+T'] {
     width: auto;
   }
 
-  .md\:max-w-\[300px\]{
-    max-width: 300px;
+  .md\:max-w-\[200px\]{
+    max-width: 200px;
   }
 
   .md\:max-w-\[420px\]{
@@ -3740,17 +3740,17 @@ section[aria-label='Notifications alt+T'] {
     flex-direction: row;
   }
 
-  .md\:gap-20{
-    gap: 5rem;
+  .md\:gap-12{
+    gap: 3rem;
   }
 
   .md\:p-10{
     padding: 2.5rem;
   }
 
-  .md\:py-14{
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+  .md\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .md\:text-4xl{
@@ -3820,10 +3820,6 @@ section[aria-label='Notifications alt+T'] {
     order: 2;
   }
 
-  .lg\:h-28{
-    height: 7rem;
-  }
-
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3832,8 +3828,8 @@ section[aria-label='Notifications alt+T'] {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:gap-24{
-    gap: 6rem;
+  .lg\:gap-16{
+    gap: 4rem;
   }
 
   .lg\:text-7xl{
