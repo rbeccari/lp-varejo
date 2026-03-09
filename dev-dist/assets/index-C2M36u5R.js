@@ -24249,6 +24249,9 @@ function useAnimatedCounter(end, duration$2 = 2e3, startAnimating = true) {
 	return count$2;
 }
 var logos = [
+	"/assets/monteiro-66d9f-B25fq_wR.png",
+	"/assets/alvorada-d77d1-BcEsfiHQ.png",
+	"/assets/raizes-8d132-Di01sBS5.png",
 	"https://img.usecurling.com/i?q=walmart&color=gray",
 	"https://img.usecurling.com/i?q=target&color=gray",
 	"https://img.usecurling.com/i?q=costco&color=gray",
@@ -24322,7 +24325,7 @@ function Stats() {
 						children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: logo,
 							alt: "Client Logo",
-							className: "h-10 md:h-14 mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
+							className: "h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
 						}, i$2))
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap",
@@ -24330,7 +24333,7 @@ function Stats() {
 						children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: logo,
 							alt: "Client Logo",
-							className: "h-10 md:h-14 mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
+							className: "h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
 						}, `dup-${i$2}`))
 					})]
 				})]
@@ -30091,4 +30094,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 var App_default = App;
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App_default, {}));
 
-//# sourceMappingURL=index-ClpRpotn.js.map
+//# sourceMappingURL=index-C2M36u5R.js.map

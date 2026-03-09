@@ -2,7 +2,14 @@ import { useInView } from '@/hooks/use-in-view'
 import { useAnimatedCounter } from '@/hooks/use-animated-counter'
 import { cn } from '@/lib/utils'
 
+import logoMonteiro from '@/assets/monteiro-66d9f.png'
+import logoAlvorada from '@/assets/alvorada-d77d1.png'
+import logoRaizes from '@/assets/raizes-8d132.png'
+
 const logos = [
+  logoMonteiro,
+  logoAlvorada,
+  logoRaizes,
   'https://img.usecurling.com/i?q=walmart&color=gray',
   'https://img.usecurling.com/i?q=target&color=gray',
   'https://img.usecurling.com/i?q=costco&color=gray',
@@ -91,7 +98,7 @@ export function Stats() {
                   key={i}
                   src={logo}
                   alt="Client Logo"
-                  className="h-10 md:h-14 mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
+                  className="h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
                 />
               ))}
             </div>
@@ -105,7 +112,7 @@ export function Stats() {
                   key={`dup-${i}`}
                   src={logo}
                   alt="Client Logo"
-                  className="h-10 md:h-14 mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
+                  className="h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
                 />
               ))}
             </div>
