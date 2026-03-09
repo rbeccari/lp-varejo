@@ -1885,6 +1885,11 @@ section[aria-label='Notifications alt+T'] {
   fill: currentColor;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -2192,10 +2197,6 @@ section[aria-label='Notifications alt+T'] {
 
 .tracking-tight{
   letter-spacing: -0.025em;
-}
-
-.tracking-tighter{
-  letter-spacing: -0.05em;
 }
 
 .tracking-wide{
@@ -2783,6 +2784,11 @@ section[aria-label='Notifications alt+T'] {
 
 .hover\:text-muted-foreground:hover{
   color: hsl(var(--muted-foreground));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover{
@@ -3694,6 +3700,14 @@ section[aria-label='Notifications alt+T'] {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:h-10{
+    height: 2.5rem;
+  }
+
+  .md\:h-12{
+    height: 3rem;
   }
 
   .md\:h-14{

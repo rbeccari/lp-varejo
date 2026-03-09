@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import logoBranco from '@/assets/logo-branco-rbeccari-da321.png'
+import logoPreto from '@/assets/logo-preto-rbeccari-48b72.png'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -23,16 +25,22 @@ export function Navbar() {
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false)
 
+  const isHeaderSolid = isScrolled || isMobileMenuOpen
+
   return (
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6',
+        isHeaderSolid ? 'bg-background/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6',
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold tracking-tighter text-primary">
-          R Beccari<span className="text-accent">.</span>
+        <a href="#" className="flex items-center">
+          <img
+            src={isHeaderSolid ? logoPreto : logoBranco}
+            alt="R Beccari Marketing"
+            className="h-8 md:h-10 w-auto object-contain transition-all duration-300"
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -44,7 +52,7 @@ export function Navbar() {
                   href={link.href}
                   className={cn(
                     'text-sm font-medium transition-colors hover:text-accent',
-                    isScrolled ? 'text-foreground/80' : 'text-foreground/90',
+                    isHeaderSolid ? 'text-foreground/80' : 'text-white/90 hover:text-white',
                   )}
                 >
                   {link.name}
@@ -62,7 +70,10 @@ export function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className={cn(
+            'md:hidden p-2 transition-colors',
+            isHeaderSolid ? 'text-foreground' : 'text-white',
+          )}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >

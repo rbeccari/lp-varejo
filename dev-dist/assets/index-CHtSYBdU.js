@@ -29805,6 +29805,8 @@ var NotFound = () => {
 	});
 };
 var NotFound_default = NotFound;
+var logo_branco_rbeccari_da321_default = "/assets/logo-branco-rbeccari-da321-DrSIhqj6.png";
+var logo_preto_rbeccari_48b72_default = "/assets/logo-preto-rbeccari-48b72-FYCYQdfk.png";
 function Navbar() {
 	const [isScrolled, setIsScrolled] = (0, import_react.useState)(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = (0, import_react.useState)(false);
@@ -29830,18 +29832,20 @@ function Navbar() {
 		}
 	];
 	const closeMobileMenu = () => setIsMobileMenuOpen(false);
+	const isHeaderSolid = isScrolled || isMobileMenuOpen;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-		className: cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", isScrolled ? "bg-background/95 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"),
+		className: cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", isHeaderSolid ? "bg-background/95 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"),
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "container mx-auto px-4 flex items-center justify-between",
 			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "#",
-					className: "text-2xl font-bold tracking-tighter text-primary",
-					children: ["R Beccari", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "text-accent",
-						children: "."
-					})]
+					className: "flex items-center",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: isHeaderSolid ? logo_preto_rbeccari_48b72_default : logo_branco_rbeccari_da321_default,
+						alt: "R Beccari Marketing",
+						className: "h-8 md:h-10 w-auto object-contain transition-all duration-300"
+					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
 					className: "hidden md:flex items-center gap-8",
@@ -29849,7 +29853,7 @@ function Navbar() {
 						className: "flex gap-6",
 						children: navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: link.href,
-							className: cn("text-sm font-medium transition-colors hover:text-accent", isScrolled ? "text-foreground/80" : "text-foreground/90"),
+							className: cn("text-sm font-medium transition-colors hover:text-accent", isHeaderSolid ? "text-foreground/80" : "text-white/90 hover:text-white"),
 							children: link.name
 						}) }, link.name))
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
@@ -29862,7 +29866,7 @@ function Navbar() {
 					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: "md:hidden p-2 text-foreground",
+					className: cn("md:hidden p-2 transition-colors", isHeaderSolid ? "text-foreground" : "text-white"),
 					onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
 					"aria-label": "Toggle menu",
 					children: isMobileMenuOpen ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { size: 24 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, { size: 24 })
@@ -29900,14 +29904,12 @@ function Footer() {
 				className: "grid grid-cols-1 md:grid-cols-3 gap-12 mb-12",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "space-y-4",
+						className: "space-y-6",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-								className: "text-2xl font-bold tracking-tighter",
-								children: ["R Beccari", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-accent",
-									children: "."
-								})]
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: logo_branco_rbeccari_da321_default,
+								alt: "R Beccari Marketing",
+								className: "h-10 md:h-12 w-auto object-contain"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "text-primary-foreground/70 max-w-xs",
@@ -30081,4 +30083,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 var App_default = App;
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App_default, {}));
 
-//# sourceMappingURL=index-DTeBKgAx.js.map
+//# sourceMappingURL=index-CHtSYBdU.js.map

@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
+import logoBranco from '@/assets/logo-branco-rbeccari-da321.png'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -7,10 +8,12 @@ export function Footer() {
     <footer className="bg-primary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold tracking-tighter">
-              R Beccari<span className="text-accent">.</span>
-            </h3>
+          <div className="space-y-6">
+            <img
+              src={logoBranco}
+              alt="R Beccari Marketing"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
             <p className="text-primary-foreground/70 max-w-xs">
               Estratégia e criação especializada para o mercado supermercadista há 17 anos.
             </p>
