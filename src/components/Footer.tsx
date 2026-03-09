@@ -19,14 +19,18 @@ export function Footer() {
             </p>
             <div className="flex gap-4 pt-2">
               <a
-                href="#"
+                href="https://www.instagram.com/rbeccari"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
               >
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/agenciarbeccari"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
               >
                 <Linkedin size={20} />
@@ -66,18 +70,23 @@ export function Footer() {
             <ul className="space-y-3 text-primary-foreground/70">
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-accent" />
-                <span>contato@rbeccari.com.br</span>
+                <a
+                  href="mailto:fale@rbeccari.com.br"
+                  className="hover:text-accent transition-colors"
+                >
+                  fale@rbeccari.com.br
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-accent" />
-                <span>+55 (11) 99999-9999</span>
+                <span>19 3442.9897</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-accent shrink-0 mt-1" />
                 <span>
-                  Av. Paulista, 1000 - Bela Vista
+                  Rua Visconde do Rio Branco, 748 - Centro
                   <br />
-                  São Paulo - SP
+                  Limeira - SP
                 </span>
               </li>
             </ul>

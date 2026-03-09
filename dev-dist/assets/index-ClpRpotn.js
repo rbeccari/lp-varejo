@@ -29719,7 +29719,7 @@ function Contact() {
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FormLabel, { children: "E-mail Profissional" }),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FormControl, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Input, {
 													type: "email",
-													placeholder: "joao@supermercado.com",
+													placeholder: "fale@rbeccari.com.br",
 													className: "bg-background",
 													...field
 												}) }),
@@ -29731,7 +29731,7 @@ function Contact() {
 											render: ({ field }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(FormItem, { children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FormLabel, { children: "WhatsApp" }),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FormControl, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Input, {
-													placeholder: "(11) 99999-9999",
+													placeholder: "19 981267959",
 													className: "bg-background",
 													...field
 												}) }),
@@ -29918,14 +29918,18 @@ function Footer() {
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex gap-4 pt-2",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-									href: "#",
+									href: "https://www.instagram.com/rbeccari",
+									target: "_blank",
+									rel: "noopener noreferrer",
 									className: "p-2 bg-primary-foreground/10 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Instagram, { size: 20 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "sr-only",
 										children: "Instagram"
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-									href: "#",
+									href: "https://www.linkedin.com/company/agenciarbeccari",
+									target: "_blank",
+									rel: "noopener noreferrer",
 									className: "p-2 bg-primary-foreground/10 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Linkedin, { size: 20 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "sr-only",
@@ -29979,14 +29983,18 @@ function Footer() {
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, {
 										size: 18,
 										className: "text-accent"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "contato@rbeccari.com.br" })]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+										href: "mailto:fale@rbeccari.com.br",
+										className: "hover:text-accent transition-colors",
+										children: "fale@rbeccari.com.br"
+									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 									className: "flex items-center gap-3",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, {
 										size: 18,
 										className: "text-accent"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "+55 (11) 99999-9999" })]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "19 3442.9897" })]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 									className: "flex items-start gap-3",
@@ -29994,9 +30002,9 @@ function Footer() {
 										size: 18,
 										className: "text-accent shrink-0 mt-1"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-										"Av. Paulista, 1000 - Bela Vista",
+										"Rua Visconde do Rio Branco, 748 - Centro",
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-										"São Paulo - SP"
+										"Limeira - SP"
 									] })]
 								})
 							]
@@ -30037,7 +30045,7 @@ function FloatingActions() {
 			"aria-label": "Voltar ao topo",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUp, { size: 20 })
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-			href: "https://wa.me/5511999999999",
+			href: "https://wa.me/5519981267959",
 			target: "_blank",
 			rel: "noopener noreferrer",
 			className: "flex items-center justify-center p-4 bg-[#25D366] text-white rounded-full shadow-lg transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2",
@@ -30083,4 +30091,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 var App_default = App;
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App_default, {}));
 
-//# sourceMappingURL=index-CHtSYBdU.js.map
+//# sourceMappingURL=index-ClpRpotn.js.map

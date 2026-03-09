@@ -146,7 +146,7 @@ export function Contact() {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="joao@supermercado.com"
+                            placeholder="fale@rbeccari.com.br"
                             className="bg-background"
                             {...field}
                           />
@@ -162,11 +162,7 @@ export function Contact() {
                       <FormItem>
                         <FormLabel>WhatsApp</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="(11) 99999-9999"
-                            className="bg-background"
-                            {...field}
-                          />
+                          <Input placeholder="19 981267959" className="bg-background" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
