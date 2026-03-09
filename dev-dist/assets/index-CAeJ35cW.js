@@ -24252,12 +24252,12 @@ var logos = [
 	"/assets/monteiro-66d9f-B25fq_wR.png",
 	"/assets/alvorada-d77d1-BcEsfiHQ.png",
 	"/assets/raizes-8d132-Di01sBS5.png",
-	"https://img.usecurling.com/i?q=walmart&color=gray",
-	"https://img.usecurling.com/i?q=target&color=gray",
-	"https://img.usecurling.com/i?q=costco&color=gray",
-	"https://img.usecurling.com/i?q=kroger&color=gray",
-	"https://img.usecurling.com/i?q=aldi&color=gray",
-	"https://img.usecurling.com/i?q=carrefour&color=gray"
+	"https://img.usecurling.com/i?q=walmart&color=multicolor",
+	"https://img.usecurling.com/i?q=target&color=multicolor",
+	"https://img.usecurling.com/i?q=costco&color=multicolor",
+	"https://img.usecurling.com/i?q=kroger&color=multicolor",
+	"https://img.usecurling.com/i?q=aldi&color=multicolor",
+	"https://img.usecurling.com/i?q=carrefour&color=multicolor"
 ];
 function StatItem({ label, value, suffix = "", isInView, delay }) {
 	const count$2 = useAnimatedCounter(value, 2500, isInView);
@@ -24318,24 +24318,27 @@ function Stats() {
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "text-center text-white/50 text-sm font-semibold uppercase tracking-widest mb-8",
 					children: "Marcas que confiam na nossa estratégia"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "flex overflow-hidden relative w-full group mask-image-linear",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap",
-						children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: logo,
-							alt: "Client Logo",
-							className: "h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
-						}, i$2))
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap",
-						"aria-hidden": "true",
-						children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: logo,
-							alt: "Client Logo",
-							className: "h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
-						}, `dup-${i$2}`))
-					})]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "bg-white/95 py-8 md:py-10 rounded-2xl shadow-xl border border-white/20 relative w-full overflow-hidden",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex overflow-hidden relative w-full group mask-image-linear",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap",
+							children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: logo,
+								alt: "Client Logo",
+								className: "h-10 md:h-14 lg:h-16 w-auto object-contain mx-8 md:mx-14 hover:scale-110 transition-transform duration-300"
+							}, i$2))
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap",
+							"aria-hidden": "true",
+							children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: logo,
+								alt: "Client Logo",
+								className: "h-10 md:h-14 lg:h-16 w-auto object-contain mx-8 md:mx-14 hover:scale-110 transition-transform duration-300"
+							}, `dup-${i$2}`))
+						})]
+					})
 				})]
 			})]
 		})]
@@ -30094,4 +30097,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 var App_default = App;
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App_default, {}));
 
-//# sourceMappingURL=index-C2M36u5R.js.map
+//# sourceMappingURL=index-CAeJ35cW.js.map

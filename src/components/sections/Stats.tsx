@@ -10,12 +10,12 @@ const logos = [
   logoMonteiro,
   logoAlvorada,
   logoRaizes,
-  'https://img.usecurling.com/i?q=walmart&color=gray',
-  'https://img.usecurling.com/i?q=target&color=gray',
-  'https://img.usecurling.com/i?q=costco&color=gray',
-  'https://img.usecurling.com/i?q=kroger&color=gray',
-  'https://img.usecurling.com/i?q=aldi&color=gray',
-  'https://img.usecurling.com/i?q=carrefour&color=gray',
+  'https://img.usecurling.com/i?q=walmart&color=multicolor',
+  'https://img.usecurling.com/i?q=target&color=multicolor',
+  'https://img.usecurling.com/i?q=costco&color=multicolor',
+  'https://img.usecurling.com/i?q=kroger&color=multicolor',
+  'https://img.usecurling.com/i?q=aldi&color=multicolor',
+  'https://img.usecurling.com/i?q=carrefour&color=multicolor',
 ]
 
 function StatItem({
@@ -90,31 +90,33 @@ export function Stats() {
             Marcas que confiam na nossa estratégia
           </p>
 
-          <div className="flex overflow-hidden relative w-full group mask-image-linear">
-            {/* First set of logos */}
-            <div className="flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap">
-              {logos.map((logo, i) => (
-                <img
-                  key={i}
-                  src={logo}
-                  alt="Client Logo"
-                  className="h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
-                />
-              ))}
-            </div>
-            {/* Duplicate set for seamless scrolling */}
-            <div
-              className="flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap"
-              aria-hidden="true"
-            >
-              {logos.map((logo, i) => (
-                <img
-                  key={`dup-${i}`}
-                  src={logo}
-                  alt="Client Logo"
-                  className="h-10 md:h-14 w-auto object-contain mx-8 md:mx-16 opacity-40 hover:opacity-100 transition-opacity filter invert brightness-0"
-                />
-              ))}
+          <div className="bg-white/95 py-8 md:py-10 rounded-2xl shadow-xl border border-white/20 relative w-full overflow-hidden">
+            <div className="flex overflow-hidden relative w-full group mask-image-linear">
+              {/* First set of logos */}
+              <div className="flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap">
+                {logos.map((logo, i) => (
+                  <img
+                    key={i}
+                    src={logo}
+                    alt="Client Logo"
+                    className="h-10 md:h-14 lg:h-16 w-auto object-contain mx-8 md:mx-14 hover:scale-110 transition-transform duration-300"
+                  />
+                ))}
+              </div>
+              {/* Duplicate set for seamless scrolling */}
+              <div
+                className="flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap"
+                aria-hidden="true"
+              >
+                {logos.map((logo, i) => (
+                  <img
+                    key={`dup-${i}`}
+                    src={logo}
+                    alt="Client Logo"
+                    className="h-10 md:h-14 lg:h-16 w-auto object-contain mx-8 md:mx-14 hover:scale-110 transition-transform duration-300"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
