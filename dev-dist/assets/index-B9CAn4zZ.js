@@ -24249,15 +24249,18 @@ function useAnimatedCounter(end, duration$2 = 2e3, startAnimating = true) {
 	return count$2;
 }
 var logos = [
-	"/assets/monteiro-66d9f-B25fq_wR.png",
-	"/assets/alvorada-d77d1-BcEsfiHQ.png",
-	"/assets/raizes-8d132-Di01sBS5.png",
-	"https://img.usecurling.com/i?q=walmart&color=multicolor",
-	"https://img.usecurling.com/i?q=target&color=multicolor",
-	"https://img.usecurling.com/i?q=costco&color=multicolor",
-	"https://img.usecurling.com/i?q=kroger&color=multicolor",
-	"https://img.usecurling.com/i?q=aldi&color=multicolor",
-	"https://img.usecurling.com/i?q=carrefour&color=multicolor"
+	{
+		src: "/assets/logo-negativo-retangulo-01-4156c-hoHitRwk.png",
+		alt: "Examine Supermercados"
+	},
+	{
+		src: "/assets/logo-044da-CIEQI4ri.png",
+		alt: "Barbosão Supermercados"
+	},
+	{
+		src: "/assets/logo-fauna-aa403-2BIXt4B0.png",
+		alt: "Fauna Varejista"
+	}
 ];
 function StatItem({ label, value, suffix = "", isInView, delay }) {
 	const count$2 = useAnimatedCounter(value, 2500, isInView);
@@ -24319,25 +24322,14 @@ function Stats() {
 					className: "text-center text-white/50 text-sm font-semibold uppercase tracking-widest mb-8",
 					children: "Marcas que confiam na nossa estratégia"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "bg-white/95 py-8 md:py-10 rounded-2xl shadow-xl border border-white/20 relative w-full overflow-hidden",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex overflow-hidden relative w-full group mask-image-linear",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap",
-							children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-								src: logo,
-								alt: "Client Logo",
-								className: "h-10 md:h-14 lg:h-16 w-auto object-contain mx-8 md:mx-14 hover:scale-110 transition-transform duration-300"
-							}, i$2))
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "flex animate-marquee group-hover:pause-animation items-center whitespace-nowrap",
-							"aria-hidden": "true",
-							children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-								src: logo,
-								alt: "Client Logo",
-								className: "h-10 md:h-14 lg:h-16 w-auto object-contain mx-8 md:mx-14 hover:scale-110 transition-transform duration-300"
-							}, `dup-${i$2}`))
-						})]
+					className: "bg-white/95 py-10 md:py-14 px-6 rounded-2xl shadow-xl border border-white/20 w-full",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "flex flex-wrap justify-center items-center gap-12 md:gap-20 lg:gap-24",
+						children: logos.map((logo, i$2) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: logo.src,
+							alt: logo.alt,
+							className: "h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-w-[200px] sm:max-w-[250px] md:max-w-[300px] object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm"
+						}, i$2))
 					})
 				})]
 			})]
@@ -30097,4 +30089,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 var App_default = App;
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App_default, {}));
 
-//# sourceMappingURL=index-CAeJ35cW.js.map
+//# sourceMappingURL=index-B9CAn4zZ.js.map
