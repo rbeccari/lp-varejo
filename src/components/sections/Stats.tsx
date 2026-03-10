@@ -22,9 +22,19 @@ const logos = [
   { src: logoExamine, alt: 'Examine Supermercados' },
   { src: logoBarbosao, alt: 'Barbosão Supermercados' },
   { src: logoFauna, alt: 'Fauna Varejista' },
-  { src: 'https://img.usecurling.com/i?q=market&color=multicolor', alt: 'Market Supermercados' },
-  { src: 'https://img.usecurling.com/i?q=grocery&color=multicolor', alt: 'Grocery Store' },
-  { src: 'https://img.usecurling.com/i?q=retail&color=multicolor', alt: 'Retail Express' },
+  { src: logoAlvorada, alt: 'Rede Alvorada' },
+  { src: logoBaleira, alt: 'Baleia Supermercados' },
+  { src: logoChimar, alt: 'Chimar Supermercados' },
+  { src: logoMinuano, alt: 'Supermercado Minuano' },
+  { src: logoPadona, alt: 'Padona Supermercados' },
+  { src: logoPrimos, alt: 'Primos Supermercados' },
+  { src: logoRaizes, alt: 'Supermercado Raízes' },
+  { src: logoSaorafael, alt: 'São Rafael Supermercado' },
+  { src: logoServbem, alt: 'Serve Bem Supermercados' },
+  { src: logoSoni, alt: 'Soni Supermercados' },
+  { src: logoVitoria, alt: 'Supermercado Vitória' },
+  { src: logoZargon, alt: 'Zargon Supermercados' },
+
 ]
 
 function StatItem({
