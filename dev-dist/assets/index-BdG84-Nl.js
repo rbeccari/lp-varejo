@@ -24250,28 +24250,64 @@ function useAnimatedCounter(end, duration$2 = 2e3, startAnimating = true) {
 }
 var logos = [
 	{
-		src: "/assets/logo-negativo-retangulo-01-4156c-hoHitRwk.png",
+		src: "/assets/examine-DNpQ4x8I.png",
 		alt: "Examine Supermercados"
 	},
 	{
-		src: "/assets/logo-044da-CIEQI4ri.png",
+		src: "/assets/barbosao-4-d79U5S.png",
 		alt: "Barbosão Supermercados"
 	},
 	{
-		src: "/assets/logo-fauna-aa403-2BIXt4B0.png",
+		src: "/assets/fauna-CywivYRd.png",
 		alt: "Fauna Varejista"
 	},
 	{
-		src: "https://img.usecurling.com/i?q=market&color=multicolor",
-		alt: "Market Supermercados"
+		src: "/assets/alvorada-DbkcZ7Hb.png",
+		alt: "Rede Alvorada"
 	},
 	{
-		src: "https://img.usecurling.com/i?q=grocery&color=multicolor",
-		alt: "Grocery Store"
+		src: logoBaleira,
+		alt: "Baleia Supermercados"
 	},
 	{
-		src: "https://img.usecurling.com/i?q=retail&color=multicolor",
-		alt: "Retail Express"
+		src: "/assets/chimar-DB0OL5PK.png",
+		alt: "Chimar Supermercados"
+	},
+	{
+		src: "/assets/minuano-auDh3fxU.png",
+		alt: "Supermercado Minuano"
+	},
+	{
+		src: "/assets/padona-FviTwvm4.png",
+		alt: "Padona Supermercados"
+	},
+	{
+		src: "/assets/primos-B-_EY5KK.png",
+		alt: "Primos Supermercados"
+	},
+	{
+		src: "/assets/raizes-GYIi0PuU.png",
+		alt: "Supermercado Raízes"
+	},
+	{
+		src: "/assets/saorafael-xIs5vGM3.png",
+		alt: "São Rafael Supermercado"
+	},
+	{
+		src: "/assets/servbem-C8KRPedI.png",
+		alt: "Serve Bem Supermercados"
+	},
+	{
+		src: "/assets/soni-CbcGSeTL.png",
+		alt: "Soni Supermercados"
+	},
+	{
+		src: "/assets/vitoria-DUyUouim.png",
+		alt: "Supermercado Vitória"
+	},
+	{
+		src: "/assets/zargon-f5BS-44Q.png",
+		alt: "Zargon Supermercados"
 	}
 ];
 function StatItem({ label, value, suffix = "", isInView, delay }) {
@@ -30101,4 +30137,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 var App_default = App;
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App_default, {}));
 
-//# sourceMappingURL=index-CmUIKZ89.js.map
+//# sourceMappingURL=index-BdG84-Nl.js.map

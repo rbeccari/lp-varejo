@@ -34,7 +34,6 @@ const logos = [
   { src: logoSoni, alt: 'Soni Supermercados' },
   { src: logoVitoria, alt: 'Supermercado Vitória' },
   { src: logoZargon, alt: 'Zargon Supermercados' },
-
 ]
 
 function StatItem({
