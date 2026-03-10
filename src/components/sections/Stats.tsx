@@ -2,17 +2,39 @@ import { useInView } from '@/hooks/use-in-view'
 import { useAnimatedCounter } from '@/hooks/use-animated-counter'
 import { cn } from '@/lib/utils'
 
-import logoExamine from '@/assets/logo-negativo-retangulo-01-4156c.png'
-import logoBarbosao from '@/assets/logo-044da.png'
-import logoFauna from '@/assets/logo-fauna-aa403.png'
+import logoExamine from '@/assets/examine.png'
+import logoBarbosao from '@/assets/barbosao.png'
+import logoFauna from '@/assets/fauna.png'
+import logoAlvorada from '@/assets/alvorada.png'
+import logoBaleia from '@/assets/baleia.png'
+import logoChimar from '@/assets/chimar.png'
+import logoMinuano from '@/assets/minuano.png'
+import logoPadona from '@/assets/padona.png'
+import logoPrimos from '@/assets/primos.png'
+import logoRaizes from '@/assets/raizes.png'
+import logoSaorafael from '@/assets/saorafael.png'
+import logoServbem from '@/assets/servbem.png'
+import logoSoni from '@/assets/soni.png'
+import logoVitoria from '@/assets/vitoria.png'
+import logoZargon from '@/assets/zargon.png'
 
 const logos = [
   { src: logoExamine, alt: 'Examine Supermercados' },
   { src: logoBarbosao, alt: 'Barbosão Supermercados' },
   { src: logoFauna, alt: 'Fauna Varejista' },
-  { src: 'https://img.usecurling.com/i?q=market&color=multicolor', alt: 'Market Supermercados' },
-  { src: 'https://img.usecurling.com/i?q=grocery&color=multicolor', alt: 'Grocery Store' },
-  { src: 'https://img.usecurling.com/i?q=retail&color=multicolor', alt: 'Retail Express' },
+  { src: logoAlvorada, alt: 'Rede Alvorada' },
+  { src: logoBaleira, alt: 'Baleia Supermercados' },
+  { src: logoChimar, alt: 'Chimar Supermercados' },
+  { src: logoMinuano, alt: 'Supermercado Minuano' },
+  { src: logoPadona, alt: 'Padona Supermercados' },
+  { src: logoPrimos, alt: 'Primos Supermercados' },
+  { src: logoRaizes, alt: 'Supermercado Raízes' },
+  { src: logoSaorafael, alt: 'São Rafael Supermercado' },
+  { src: logoServbem, alt: 'Serve Bem Supermercados' },
+  { src: logoSoni, alt: 'Soni Supermercados' },
+  { src: logoVitoria, alt: 'Supermercado Vitória' },
+  { src: logoZargon, alt: 'Zargon Supermercados' },
+
 ]
 
 function StatItem({
