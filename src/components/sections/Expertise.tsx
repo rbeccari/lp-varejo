@@ -32,7 +32,7 @@ const services = [
     icon: TrendingUp,
     title: 'Marketing Digital Varejista',
     description:
-      'Gestão de redes sociais, tráfego pago geolocalizado e CRM focados em trazer o cliente do digital para a loja física.',
+      'Gestão de redes sociais, tráfego patrocinado (pago) geolocalizado e CRM focados em trazer o cliente do digital para a loja física.',
   },
   {
     icon: Users,
