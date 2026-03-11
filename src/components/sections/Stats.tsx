@@ -33,7 +33,7 @@ const logos = [
   { src: logoServbem, alt: 'Serve Bem Supermercados' },
   { src: logoSoni, alt: 'Soni Supermercados' },
   { src: logoVitoria, alt: 'Supermercado Vitória' },
-  { src: logoZargon, alt: 'Zargon Supermercados' },
+  { src: logoZargon, alt: 'Zargon Supermercados' }
 ]
 
 function StatItem({
